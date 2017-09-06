@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VIP中心</title>
+<link href="css/hezuo.css" rel="stylesheet" type="text/css">
+<link href="css/public.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.1.11.3.min.js"></script>
+<script type="text/javascript" src="js/vip.js"></script>
+<script type="text/javascript" src="js/path.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+		//加载默认界面
+		loadDefualtDatas();
+	});
+</script>
+</head>
+<body>
+<!-- 头部 -->
+<div id="head">
+  <div class="margin clear">
+    <a href="#" class="logo l"><img src="images/boot_logo.png" /></a>
+        <a href="#" class="logo-title r">客户管理系统</a>
+        <div class="user-info">
+            <div class="info-admin">Admin</div>
+            <div class="info-out">退出</div>
+        </div>
+  </div>
+</div>
+<!-- 导航 -->
+<div id="nav">
+  <div class="margin clear">
+    <ul class="nav-list clear">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="hezuo.html">VIP服务</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="#">待定</a></li>
+            <li><a href="#">待定</a></li>
+            <li><a href="#">待定</a></li>
+            <li><a href="#">待定</a></li>
+            <li class="last"><a href="#">待定</a></li>
+        </ul>
+  </div>
+</div>
+
+<div id="main">
+	<div class="margin clear">
+		<div class="title">
+            <h3>VIP服务</h3>
+            <a href="#">您现在的位置：首页>VIP服务</a>
+        </div>
+        <div class="mleft l">
+            <ul class="mleft-list">
+                <li ><a href="#">客户信息</a></li>
+                <li><a href="#">消费记录</a></li>
+                <li><a href="#">积分统计</a></li>
+                <li><a href="#">兑换中心</a></li>
+                <li><a href="#">生日祝福</a></li>
+            </ul>
+        </div>
+        <div class="mright r">
+           <div class="main-content">
+              <!-- 填写表格等数据 -->
+              <!-- 功能区 -->
+              <div class="data-head">
+              </div>
+              <!-- 数据展示区 -->
+              <div class="data-list">
+              	<table class="data-table">
+              	</table>
+              </div>
+           </div>
+           <ul class="fenye">
+               <li class="first">上一页</li>
+               <li>1</li>
+               <li>2</li>
+               <li>3</li>
+               <li>4</li>
+               <li>5</li>
+               <li class="first">下一页</li>
+           </ul>
+        </div>
+	</div>
+</div>
+<!-- 底部 -->
+<div id="foot">
+  <div class="margin">
+        <div class="foot-bottom">
+            <p>啦啦啦啦啦啦啊啦啦啦啦啦啦啦啦啦  电话：8888888888</p>
+            <span>地址：湖南省韶山市清溪镇新天时代步行街</span>
+        </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.1.11.3.min.js" ></script>
+<script>
+    $('.user-info').hover(function(){
+        $('.info-out').fadeIn();
+    },function(){
+        $('.info-out').fadeOut();
+    })
+</script>
+</body>
+</html>

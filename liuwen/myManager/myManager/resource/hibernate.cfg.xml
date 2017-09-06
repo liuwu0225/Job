@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+   		<!-- 配置Hibernate方言,Hibernate可针对特殊的数据库进行优化 -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- 是否把Hernate运行的SQL语句输出到控制台,编码阶段便于测试 -->
+    	<property name="show_sql">true</property>
+    	<!-- 输出到控制台的SQL是否进行排版,建议设置为true以便于阅读 -->
+    	<property name="format">true</property>
+    	<!-- 可以帮助由java代码生成数据库脚本,进而生成具体的表结构.create|update|create-drop|validate 
+    		若无添加该配置,则不会自动生成Table
+    	-->
+    	<property name="hbm2ddl.auto">update</property>
+    	<!-- 如果使用Spring整合hibernate则该配置必须去掉 -->
+    	<!-- <property name="hibernate.current_session_context_class">thread</property> -->
+    	<!-- 如果在xml配置文件中在sessionFactory中定义了包扫描方式加载注解类则此处可以省略 -->
+    	<!-- <mapping class="com.demo.entity.Customers"/> -->
+    </session-factory>
+</hibernate-configuration>

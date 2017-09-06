@@ -1,0 +1,93 @@
+body {
+  background: url(../images/boot.jpg);
+}
+.margin{
+  width:960px;
+  margin:0 auto;
+}
+/*头部*/
+#head{
+  height:118px;
+  background:#1772a3;
+  opacity: 0.7;
+}
+.logo{
+  display:block;
+  margin-top:32px;
+}
+.logo-title{
+  display:block;
+  margin-top:32px;
+  font:700 24px/48px "";
+  color: #fff;
+}
+
+.signin {
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:477px;
+	height:479px;
+	margin:0 auto;
+	margin-top:-239px;
+	margin-left:-238px;
+	background-color: #fff;
+  opacity: 0.9;
+}
+.signin-head {
+	padding: 20px 0;
+	text-align: center;
+	background-color: #F0AD4E;
+}
+.signin-head .img-circle {
+	width:120px;
+}
+.form-signin {
+  max-width: 330px;
+  padding: 43px 15px 15px 15px;
+  margin: 0 auto;
+}
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: 14px;
+  border-radius: 0;
+  background: url(../images/login_user.png) 0 0 #bdbdbd no-repeat;
+  padding-left:60px;
+  color:#FFFFFF;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-radius: 0;
+  background: url(../images/login_pas.png) 0 0 #bdbdbd no-repeat;
+  padding-left:60px;
+  color:#FFFFFF;
+}
+.form-signin button {
+  border-radius: 0;
+}
+
+.signin-foot {
+	height: 80px;
+	background-color: #aaa;
+}
+
+
+/*错误提示 css*/
+.signin label.error {
+	color: #c33;
+	font-weight: normal;
+}

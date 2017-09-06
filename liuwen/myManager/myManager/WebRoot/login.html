@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用户登录</title>
+<!-- <link href="css/login.css" rel="stylesheet" type="text/css"> -->
+<link href="css/public.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/login-reg.css" rel="stylesheet">
+</head>
+<body>
+<!-- 头部 -->
+<div id="head">
+  <div class="margin clear">
+    <a href="#" class="logo l"><img src="images/boot_logo.png" /></a>
+        <span class="logo-title r">客户管理系统</span>
+  </div>
+</div>
+<!-- 登录验证 -->
+<!-- <div class="container">
+    
+    <div class="login-item">
+        <label class="label1">用户名</label>
+        <input type="text" class="username item1"> 
+    </div class="login-item">
+    <div class="login-item">
+        <label class="label1">密码</label>
+        <input type="password" class="password item1"> 
+    </div>
+    <div class="login-item">
+        <input type="checkbox" class="check" /> 
+        <label>记住密码</label>
+    </div>
+    <div class="login-item">
+        <span class="error">用户名或密码错误</span>
+    </div>
+</div> -->
+<!-- 登录验证 -->
+<div class="signin">
+    <div class="signin-head">
+        <!-- <a href="index.html" title="回到首页"> -->
+        <img src="images/boot_logo.png" alt="" class="img-circle">
+        <!-- </a> -->
+    </div>
+    <form action="login" class="form-signin" id="login" role="form" method="post">
+        <input type="text" class="form-control required" name="username" placeholder="用户名"/>
+        <input type="password" class="form-control required" name="password" placeholder="密码"/>
+        <button class="btn btn-lg btn-warning btn-block submit" type="submit">登录</button>
+        <label class="checkbox">
+            <input type="checkbox" value="remember-me"> 记住我
+        </label>
+    </form>
+    <div class="signin-foot"></div>
+</div>
+
+<script type="text/javascript" src="js/jquery.1.11.3.min.js" ></script>
+<!--表单自动验证-->
+<script type="text/javascript" src="js/jquery.validate.js" ></script>
+<!--修改提示信息-->
+<script type="text/javascript" src="js/validate_tip.js" ></script>
+<script>
+    $('#login').validate();
+</script>
+
+</body>
+</html>
